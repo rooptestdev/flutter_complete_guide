@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import './question.dart';
-import './answer.dart';
 import './quiz.dart';
 import './result.dart';
 
@@ -55,7 +53,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My first App'),
+          title: const Text('My first App'),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
